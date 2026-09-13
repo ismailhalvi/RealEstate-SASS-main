@@ -1,0 +1,131 @@
+.products {
+  
+  padding: 50px 0;
+  
+   background-color: #ccc;
+  .all-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product {
+    background-color: white;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    &:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+      cursor : pointer;
+    }
+
+    .products-img {
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      
+      }
+    }      
+  }
+
+    .offer {
+    position: absolute;
+    background-color: $accentColor;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    top: 15px;
+    left: 15px;
+    z-index: 141;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .products-info {
+    padding: 10px ;
+    .category {
+      background-color: $secondaryColor;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: $mainColor;
+    }
+    .location {
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 10px;
+      display: block;
+      position: relative;
+      
+      &::before {
+        content: "\f3c5";
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        position: absolute;
+        left: -10px;
+        color: $mainColor;
+        font-size: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 8px;
+      }
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #aeaeae;
+      margin: 10px 0;
+    }
+
+  }
+  ul {
+    display: flex;
+    
+    li {
+      margin-bottom: 5px;
+      flex-direction: column;
+      color: #555;
+      align-items: center;
+      margin-right: 10px;
+      display: flex;
+      span {
+        font-weight: bold;
+        color: $mainColor;
+
+         font-size:  14px;
+      }
+      i {
+        margin-right: 5px;
+      }
+  }
+}
+.btn-primary {
+  margin-top: 20px;
+  width: 100%;
+  background-color: $secondaryColor;
+  color: black;
+  border: none;
+  &:hover {
+    background-color: $mainColor;
+    color: #fff;
+  }
+}
+}

@@ -1,0 +1,115 @@
+.footer {
+  .contact {
+    border-top: 3px solid #ff6f61;
+    
+    display: grid;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    border-radius: 0 0 40px 40px;
+    background-color: #ffffff;
+
+    .inner-contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h5 {
+        color: #ff6f61;
+      }
+      a {
+        color: #071739;
+      }
+    }
+    
+  }
+
+  background-color: #071739;
+  background-image: url("../../assets/images/footerbg\ \(1\).png");
+
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  .inner-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+
+    .footer-box {
+      h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: white;
+      }
+      p {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: white;
+        line-height: 1.9;
+        width: 88%;
+        text-align: justify;
+      }
+
+      li {
+        margin-bottom: 10px;
+        font-size: 16px;
+        transition: 0.3s;
+        color: white;
+        &:hover {
+          scale: 1.1;
+        }
+      }
+      .social-media-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+
+        transition: 0.3s;
+        &:hover {
+          scale: 1.1;
+        }
+      }
+      a:hover {
+        color: $secondaryColor;
+      }
+      form {
+        input {
+          width: 100%;
+          height: 35px;
+          padding: 5px 10px;
+          font-size: 16px;
+          text-align: center;
+          border-radius: 5px;
+          border: 1px solid rgba(0, 0, 0, 0.082);
+
+          &:focus {
+            outline: none;
+            border: 1px solid #ccc;
+          }
+        }
+      }
+      .btn-danger-2 {
+        background-color: #ff6f61;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: 0.3s;
+        margin-top: 10px;
+
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}

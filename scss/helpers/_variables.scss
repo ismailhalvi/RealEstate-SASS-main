@@ -1,0 +1,68 @@
+// الألوان الرئيسية
+$mainColor: #071739;         // غامق جدًا، للـ background أو الـ header
+$secondaryColor: #e3c39d;    // دافئ، للـ buttons أو highlights
+$accentColor: #ff6f61;       // لون جذاب للـ call to action
+
+// الألوان المحايدة
+$lightGray: #cdd5db;         // للخلفيات الفاتحة
+$mediumGray: #a4b5c4;        // للـ borders أو نصوص ثانوية
+$darkGray: #2b2b2b;           // للنصوص الأساسية
+$white: #ffffff;             // للنصوص أو العناصر الفاتحة
+
+// ألوان تفاعل
+$hoverColor: #f0d8b5;        // عند hover على الأزرار أو الروابط
+// ألوان الروابط حسب ألوان المشروع
+$linkColor: $secondaryColor;       // اللون الأساسي للرابط (e3c39d)
+$linkHoverColor: $accentColor;      // عند hover (لون جذاب للانتباه)
+$linkVisitedColor: $mediumGray;     // الرابط المزور (a4b5c4)
+$linkActiveColor: $white;           // عند الضغط على الرابط
+
+
+.btn-primary {
+  background-color: $mainColor;
+  color: $white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hoverColor;
+    color: $darkGray;
+  }
+}
+
+.btn-danger {
+  background-color: $accentColor;
+  color: $white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($accentColor, 10%);
+  }
+}
+
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
